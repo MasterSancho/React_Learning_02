@@ -44,3 +44,23 @@ eComm
 => Bring Link fontAwesome for icons (<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />)
 
 - Bring icons to (<Nav.Link>)(<i className='fas fa-shopping-cart'></i>)
+
+=> Bring folder (images) to (public) folder
+
+=> Bring (product.js) to (src) folder
+
+=> Create (screens) folder in (src) folder
+
+- Create (HomeScreen.js) in (screens) folder
+
+=> In (HomeScreen.js)
+
+- (import products from '../products')
+- Bring (
+<Row>
+{products.map((product) => (
+ <Col sm={12} md={6} lg={4} xl={3}>
+ <h3>{product.name}</h3>
+ </Col>
+ ))}
+ </Row> )
