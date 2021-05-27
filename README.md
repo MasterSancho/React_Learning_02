@@ -8,8 +8,39 @@ eComm
 
 => Change App.js to arrowFunction
 
-=> make git to root folder (rm -rf .git)
+=> Make git to root folder (rm -rf .git)
 
 - move (.gitignore) to root folder
 - edit (.gitignore) (node_modules
   node_modules/) + (.env)
+
+=> Create in (src) folder (components) folder && (Header.js && Footer.js)
+
+=> In (App.js) create (main) tag && (<Header /> & <Footer />) on top and bot
+
+=> Bring from bootswatch.com -> Theme (bootstrap.min.css) to (src) folder &&
+
+- import it to (index.js) (import './bootstrap.min.css')
+- install react-bootstrap in frontend folder (npm i react-bootstrap)
+
+=> (import { Container } from 'react-bootstrap') to (App.js)
+
+- && wrap (<h1>) with (<Container>)
+
+=> In Footer.js component
+
+- (import { Container, Row, Col } from 'react-bootstrap')
+- (<footer> -> <Container> -> <Row> -> <Col className='text-center py-3'>Copyright &copy; ProShop</Col>)
+
+=> In (index.css) write (main { min-height: 80vh })
+
+=> Bring Navbar layout from react-bootstrap.io to (Header.js)
+
+- chg (<Nav.Link>) root tag (className='ms-auto')
+- chg (<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>)
+
+=> Wrap below (<Navbar>) -> (<Container>)
+
+=> Bring Link fontAwesome for icons (<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />)
+
+- Bring icons to (<Nav.Link>)(<i className='fas fa-shopping-cart'></i>)
