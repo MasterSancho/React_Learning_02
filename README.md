@@ -100,3 +100,21 @@ return (
 
 export default Product;
 )
+
+=> Routing (i in frontend)
+{ npm i react-router-dom react-router-bootstrap}
+
+- Wrap in (App.js) root tag with ( <Router> ) &&
+- Componentd like this ( <Route path='/' component={HomeScreen} exact /> )
+
+=> ( import { Link } from 'react-router-dom'; ) to ( Product.js ) &&
+
+- Change a tag to Link tag
+- # Change href to to
+
+  => import { LinkContainer } from 'react-router-bootstrap'; to ( Header.js ) &&
+
+  - Wrap tags with href like this:
+    <LinkContainer to='/'>
+    <Navbar.Brand>ProShop</Navbar.Brand>
+    </LinkContainer>
